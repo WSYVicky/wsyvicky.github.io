@@ -11,14 +11,10 @@
 <meta property="og:url" content="http://yoursite.com/2018/01/23/我是如何利用hexo搭建自己的博客的/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="利用Hexo搭建自己的个人博客（MacBook Pro）(一)环境安装 npm的安装 hexo的安装$ npm install hexo-cli -g  （二）本地博客搭建 本地初始化一个名为“blog”的文件夹$ hexo init blog 进入blog文件夹$ cd blog 在文件夹中安装npm$ npm install 启动hexo sever$ hexo server  （三）将本地b">
-<meta property="og:image" content="http://yoursite.com/2018/01/23/我是如何利用hexo搭建自己的博客的/repository.png">
-<meta property="og:image" content="http://yoursite.com/2018/01/23/我是如何利用hexo搭建自己的博客的/changeconfig.png">
-<meta property="og:image" content="http://yoursite.com/2018/01/23/我是如何利用hexo搭建自己的博客的/changeconfig.png">
-<meta property="og:updated_time" content="2018-01-23T16:17:29.888Z">
+<meta property="og:updated_time" content="2018-01-23T16:24:17.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="利用Hexo搭建自己的个人博客（MacBook Pro）(一)环境安装 npm的安装 hexo的安装$ npm install hexo-cli -g  （二）本地博客搭建 本地初始化一个名为“blog”的文件夹$ hexo init blog 进入blog文件夹$ cd blog 在文件夹中安装npm$ npm install 启动hexo sever$ hexo server  （三）将本地b">
-<meta name="twitter:image" content="http://yoursite.com/2018/01/23/我是如何利用hexo搭建自己的博客的/repository.png">
     
 
     
@@ -233,18 +229,18 @@
 </ol>
 <h2 id="（三）将本地blog部署到GitHub上"><a href="#（三）将本地blog部署到GitHub上" class="headerlink" title="（三）将本地blog部署到GitHub上"></a>（三）将本地blog部署到GitHub上</h2><ol>
 <li>在GitHub上新建一个profile</li>
-<li>域名填写要根据GitHub账户名来定。<br><img src="/2018/01/23/我是如何利用hexo搭建自己的博客的/repository.png" alt="repository"></li>
+<li>域名填写要根据GitHub账户名来定。</li>
 <li>配置本地ssh。在终端输入：<br><br><code>$ git config --global user.name &quot;WSYVicky&quot;</code><br><code>$ git config --global user.mail &quot;1248965945@qq.com&quot;</code></li>
 <li>生成本地公钥和秘钥<br><br><code>$ ssh-keygen -t rsa -C &quot;1248965945@qq.com&quot;</code></li>
 </ol>
 <h2 id="（四）修改本地-ssh-文件"><a href="#（四）修改本地-ssh-文件" class="headerlink" title="（四）修改本地.ssh/文件"></a>（四）修改本地.ssh/文件</h2><ol>
 <li>用编辑器打开.ssh/文件下的id_rsa.pub文件</li>
-<li>在GitHub上新建一个ssh keys，将id_rsa.pub文件的内容复制到这里：<br><img src="/2018/01/23/我是如何利用hexo搭建自己的博客的/changeconfig.png" alt="changeconfig"></li>
+<li>在GitHub上新建一个ssh keys，将id_rsa.pub文件的内容复制到这里：</li>
 <li>测试ssh能不能打通这个账号,在终端输入：<br><br><code>ssh -T git@github.com</code><br>显示successfully就是成功了！</li>
 </ol>
 <h2 id="（五）下载一些hexo的插件"><a href="#（五）下载一些hexo的插件" class="headerlink" title="（五）下载一些hexo的插件"></a>（五）下载一些hexo的插件</h2><ol>
 <li><code>$ npm install hexo-deployer-git --save</code></li>
-<li>打开_config.yml文件,修改以下代码：<br><img src="/2018/01/23/我是如何利用hexo搭建自己的博客的/changeconfig.png" alt="changeconfig"><br>其中repo是从你自己的GitHub中wsyvicky.github.io中复制过来的，点击保存！<br></li>
+<li>打开_config.yml文件,修改以下代码：<br>其中repo是从你自己的GitHub中wsyvicky.github.io中复制过来的，点击保存！<br></li>
 <li>测试部署<br><br><code>$ hexo deploy</code></li>
 <li>刷新wsyvicky.github.io，部署成功啦！</li>
 </ol>

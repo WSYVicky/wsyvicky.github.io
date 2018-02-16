@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Vicky Home</title>
+    <title>Tag: FCC | Vicky Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="Vicky Home">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/FCC/index.html">
 <meta property="og:site_name" content="Vicky Home">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vicky Home">
@@ -200,146 +200,44 @@
 
             
             <section id="main">
-    <article id="post-Where-do-I-belong-数组排序并找出元素索引" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
+<div class="timeline timeline-wrap">
+    <div class="timeline-row timeline-row-major">
+        <span class="node"><i class="fa fa-tag"></i></span>
+        <h1 class="title">#FCC</h1>
+    </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/">Where do I belong(数组排序并找出元素索引)</a>
+            <a class="timeline-article-title" href="/2018/02/16/JSON-APIs-and-Ajax/">JSON APIs and Ajax</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/">
-            <time datetime="2018-02-14T03:56:17.000Z" itemprop="datePublished">2018-02-14</time>
+        <a href="/2018/02/16/JSON-APIs-and-Ajax/">
+            <time datetime="2018-02-16T13:02:09.000Z" itemprop="datePublished">2018-02-16</time>
         </a>
     </div>
 
 
-                        
-                        
+                    
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/算法/">算法</a>
+        <a class="tag-link" href="/tags/FCC/">FCC</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>【题目要求】</p>
-<ul>
-<li>先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。</li>
-<li>举例：where([1,2,3,4], 1.5) 应该返回 1。因为1.5插入到数组[1,2,3,4]后变成[1,1.5,2,3,4]，而1.5对应的索引值就是1。 </li>
-<li>同理，where([20,3,5], 19) 应该返回 2。因为数组会先排序为 [3,5,20]，19插入到数组[3,5,20]后变成[3,5,19,20]，而19对应的索引值就是2。</li>
-</ul>
-<p>【思路】</p>
-<ul>
-<li>创建一个新的数组newArr();</li>
-<li>用arguments() 函数将参数分别放入数组newArr();</li>
-<li>sort() 函数给数组排序</li>
-</ul>
-<p>【代码】</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="built_in">where</span>(arr, num) &#123;</span><br><span class="line">  // 请把你的代码写在这里</span><br><span class="line">  var newArr = [];</span><br><span class="line">  <span class="keyword">for</span>(var i=0; i&lt;arguments[0].length; i++)&#123;</span><br><span class="line">    newArr[i] = arguments[0][i];</span><br><span class="line">  &#125;</span><br><span class="line">  newArr.push(arguments[1]);</span><br><span class="line">  newArr.sort(<span class="keyword">function</span>(a,b)&#123;</span><br><span class="line">  <span class="built_in">return</span> a-b;</span><br><span class="line">  &#125;);</span><br><span class="line">  //<span class="built_in">return</span> newArr;</span><br><span class="line">  <span class="built_in">return</span> newArr.indexOf(num);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">where</span>([2, 20, 10], 19) ;</span><br></pre></td></tr></table></figure>
-        
+                </div>
+            </div>
         </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
+    
 </div>
-
-    <a data-url="http://yoursite.com/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/" data-id="cjdpzkxcr0004kxtqlbbmttgy" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
-    </nav>
 </section>
             
                 

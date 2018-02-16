@@ -3,14 +3,19 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Vicky Home</title>
+    <title>JSON APIs and Ajax | Vicky Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Vicky Home">
-<meta property="og:url" content="http://yoursite.com/page/5/index.html">
+    <meta name="description" content="$(document).ready()这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。 1234567$(document).ready(function() &amp;#123;  $(&quot;#getMessage&quot;).on(&quot;click&quot;,function()  	&amp;#123;    		$(&quot;.message&quot;).html(&quot;Here is the mes">
+<meta name="keywords" content="FCC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSON APIs and Ajax">
+<meta property="og:url" content="http://yoursite.com/2018/02/16/JSON-APIs-and-Ajax/index.html">
 <meta property="og:site_name" content="Vicky Home">
+<meta property="og:description" content="$(document).ready()这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。 1234567$(document).ready(function() &amp;#123;  $(&quot;#getMessage&quot;).on(&quot;click&quot;,function()  	&amp;#123;    		$(&quot;.message&quot;).html(&quot;Here is the mes">
+<meta property="og:updated_time" content="2018-02-16T13:44:59.500Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vicky Home">
+<meta name="twitter:title" content="JSON APIs and Ajax">
+<meta name="twitter:description" content="$(document).ready()这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。 1234567$(document).ready(function() &amp;#123;  $(&quot;#getMessage&quot;).on(&quot;click&quot;,function()  	&amp;#123;    		$(&quot;.message&quot;).html(&quot;Here is the mes">
     
 
     
@@ -199,16 +204,15 @@
 </aside>
 
             
-            <section id="main">
-    <article id="post-Basic-JavaScript" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-JSON-APIs-and-Ajax" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/04/Basic-JavaScript/">Basic JavaScript</a>
+        <h1 class="article-title" itemprop="name">
+            JSON APIs and Ajax
         </h1>
     
 
@@ -217,14 +221,19 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/02/04/Basic-JavaScript/">
-            <time datetime="2018-02-04T01:49:55.000Z" itemprop="datePublished">2018-02-04</time>
+        <a href="/2018/02/16/JSON-APIs-and-Ajax/">
+            <time datetime="2018-02-16T13:02:09.000Z" itemprop="datePublished">2018-02-16</time>
         </a>
     </div>
 
 
                         
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/FCC/">FCC</a>
+    </div>
+
                     </div>
                 
             </header>
@@ -233,67 +242,27 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourName; </span><br><span class="line">// 创建一个名为ourName的variable（变量）</span><br></pre></td></tr></table></figure>
-<h3 id="驼峰命名法"><a href="#驼峰命名法" class="headerlink" title="驼峰命名法"></a>驼峰命名法</h3><p>变量名的第一个单词的首写字母小写，后面的单词的第一个字母大写。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var someVariable;</span><br></pre></td></tr></table></figure>
-<h3 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h3><p>在 JavaScript 中，你可以通过在引号前面使用 反斜杠 () 来转义引号。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var sampleStr = <span class="string">"Alan said, \"Peter is learning JavaScript\"."</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 转义 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'This string has "double quotes" in it. And "probably" lots of them.'</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串中的转义序列"><a href="#字符串中的转义序列" class="headerlink" title="字符串中的转义序列"></a>字符串中的转义序列</h3><p><img src="/2018/02/04/Basic-JavaScript/EscapeSequences.png" alt="EscapeSequences"></p>
-<h3 id="字符串值的长度"><a href="#字符串值的长度" class="headerlink" title="字符串值的长度"></a>字符串值的长度</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Alan Peter"</span>.length; // 10</span><br></pre></td></tr></table></figure>
-<h3 id="push-函数"><a href="#push-函数" class="headerlink" title=".push() 函数"></a>.push() 函数</h3><p>插入一个数值在函数最后</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,2,3];</span><br><span class="line">arr.push(4);</span><br><span class="line">// 现在arr的值为 [1,2,3,4]</span><br></pre></td></tr></table></figure>
-<h3 id="pop-函数"><a href="#pop-函数" class="headerlink" title=".pop() 函数"></a>.pop() 函数</h3><p>.pop() 函数用来“抛出”一个数组末尾的值。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var oneDown = [1, 4, 6].pop();</span><br><span class="line">// 现在 oneDown 的值为 6 ，数组变成了 [1, 4]。</span><br></pre></td></tr></table></figure></p>
-<h3 id="shift-函数"><a href="#shift-函数" class="headerlink" title=".shift() 函数"></a>.shift() 函数</h3><p>.shift() 移出第一个元素</p>
-<h3 id="unshift-函数"><a href="#unshift-函数" class="headerlink" title=".unshift() 函数"></a>.unshift() 函数</h3><p>移入一个元素到数组的头部</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myArray.unshift([<span class="string">"Paul"</span>,35]);</span><br></pre></td></tr></table></figure>
-<h3 id="和-（-）和-（！-）和-（-）"><a href="#和-（-）和-（！-）和-（-）" class="headerlink" title="(===) 和 （==）和 （！=）和 （!==）"></a>(===) 和 （==）和 （！=）和 （!==）</h3><p>严格相等运算符（===）会同时比较元素的值和数据类型。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3 === 3   // <span class="literal">true</span></span><br><span class="line">3 === <span class="string">'3'</span> // <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>与相等运算符类似，不相等运算符（！=）在比较的时候也会转换值的数据类型。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1 != 2      // <span class="literal">true</span></span><br><span class="line">1 != <span class="string">"1"</span>    // <span class="literal">false</span></span><br><span class="line">1 != <span class="string">'1'</span>    // <span class="literal">false</span></span><br><span class="line">1 != <span class="literal">true</span>   // <span class="literal">false</span></span><br><span class="line">0 != <span class="literal">false</span>  // <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<h3 id="访问对象属性的方法"><a href="#访问对象属性的方法" class="headerlink" title="访问对象属性的方法"></a>访问对象属性的方法</h3><ul>
-<li>点操作符(.)</li>
+            <h3 id="document-ready"><a href="#document-ready" class="headerlink" title="$(document).ready()"></a>$(document).ready()</h3><p>这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>,<span class="keyword">function</span>()</span><br><span class="line">  	&#123;  </span><br><span class="line">  		$(<span class="string">".message"</span>).html(<span class="string">"Here is the message"</span>);</span><br><span class="line">  	&#125;);</span><br><span class="line">  // 点击<span class="string">"Get Message"</span>按钮，将class为message 的元素的文本改为：“Here is the message”</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="API接口、JSON数据"><a href="#API接口、JSON数据" class="headerlink" title="API接口、JSON数据"></a>API接口、JSON数据</h3><ul>
+<li>点击”Get Message”按钮。</li>
+<li>你的Ajax函数将把文字”The message will go here”替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myObj = &#123;</span><br><span class="line">  prop1: <span class="string">"val1"</span>,</span><br><span class="line">  prop2: <span class="string">"val2"</span></span><br><span class="line">&#125;;</span><br><span class="line">var prop1val = myObj.prop1; // val1</span><br><span class="line">var prop2val = myObj.prop2; // val2</span><br></pre></td></tr></table></figure>
-<ul>
-<li>中括号操作符([])</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="keyword">function</span>(json) &#123;</span><br><span class="line">      $(<span class="string">".message"</span>).html(JSON.stringify(json));</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="forEach-函数"><a href="#forEach-函数" class="headerlink" title=".forEach()函数"></a>.forEach()函数</h3><ul>
+<li>循环遍历JSON数据写到htmll变量中</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myObj = &#123;</span><br><span class="line">  <span class="string">"Space Name"</span>: <span class="string">"Kirk"</span>,</span><br><span class="line">  <span class="string">"More Space"</span>: <span class="string">"Spock"</span></span><br><span class="line">&#125;;</span><br><span class="line">myObj[<span class="string">"Space Name"</span>]; // Kirk</span><br><span class="line">myObj[<span class="string">'More Space'</span>]; // Spock 需要加上引号</span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用变量来访问属性的例子：</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line"></span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  </span><br><span class="line">      $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="keyword">function</span>(json) &#123;</span><br><span class="line">      var html = <span class="string">""</span>;</span><br><span class="line">      json.forEach(<span class="keyword">function</span>(val) &#123;</span><br><span class="line">        var keys = Object.keys(val);</span><br><span class="line">        html += <span class="string">"&lt;div class = 'cat'&gt;"</span>;</span><br><span class="line">        keys.forEach(<span class="keyword">function</span>(key) &#123;</span><br><span class="line">        html += <span class="string">"&lt;b&gt;"</span> + key + <span class="string">"&lt;/b&gt;: "</span> + val[key] + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        html += <span class="string">"&lt;/div&gt;&lt;br&gt;"</span>;</span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">".message"</span>).html(html);</span><br><span class="line"></span><br><span class="line">      &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="显示-JSON-数组中-img-元素的图片"><a href="#显示-JSON-数组中-img-元素的图片" class="headerlink" title="显示 JSON 数组中 img 元素的图片"></a>显示 JSON 数组中 img 元素的图片</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line"></span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="keyword">function</span>(json) &#123;</span><br><span class="line"></span><br><span class="line">      var html = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">      json.forEach(<span class="keyword">function</span>(val) &#123;</span><br><span class="line"></span><br><span class="line">        html += <span class="string">"&lt;div class = 'cat'&gt;"</span>;</span><br><span class="line">        </span><br><span class="line">        html += <span class="string">"&lt;img src = '"</span> + val.imageLink + <span class="string">"'&gt;"</span>;</span><br><span class="line">	//当我们在遍历这些对象时，我们用imageLink的属性来显示img元素的图片。</span><br><span class="line"></span><br><span class="line">        html += <span class="string">"&lt;/div&gt;"</span>;</span><br><span class="line"></span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">".message"</span>).html(html);</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="JSON-API过滤器"><a href="#JSON-API过滤器" class="headerlink" title="JSON API过滤器"></a>JSON API过滤器</h3><ul>
+<li>我们把其中 “id” 键的值为1的图片过滤掉。</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var someProp = <span class="string">"propName"</span>;</span><br><span class="line">var myObj = &#123;</span><br><span class="line">  propName: <span class="string">"Some Value"</span></span><br><span class="line">&#125;</span><br><span class="line">myObj[someProp]; // <span class="string">"Some Value"</span>,不需要加双引号</span><br></pre></td></tr></table></figure>
-<h3 id="hasOwnProperty-propname"><a href="#hasOwnProperty-propname" class="headerlink" title=".hasOwnProperty(propname)"></a>.hasOwnProperty(propname)</h3><p>检查对象是否有该属性</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myObj = &#123;</span><br><span class="line">  top: <span class="string">"hat"</span>,</span><br><span class="line">  bottom: <span class="string">"pants"</span></span><br><span class="line">&#125;;</span><br><span class="line">myObj.hasOwnProperty(<span class="string">"top"</span>);    // <span class="literal">true</span></span><br><span class="line">myObj.hasOwnProperty(<span class="string">"middle"</span>); // <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<h3 id="在JSON中访问对象的嵌套属性"><a href="#在JSON中访问对象的嵌套属性" class="headerlink" title="在JSON中访问对象的嵌套属性"></a>在JSON中访问对象的嵌套属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var ourStorage = &#123;</span><br><span class="line">  <span class="string">"desk"</span>: &#123;</span><br><span class="line">    <span class="string">"drawer"</span>: <span class="string">"stapler"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"cabinet"</span>: &#123;</span><br><span class="line">    <span class="string">"top drawer"</span>: &#123; </span><br><span class="line">      <span class="string">"folder1"</span>: <span class="string">"a file"</span>,</span><br><span class="line">      <span class="string">"folder2"</span>: <span class="string">"secrets"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"bottom drawer"</span>: <span class="string">"soda"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">ourStorage.cabinet[<span class="string">"top drawer"</span>].folder2;  // <span class="string">"secrets"</span></span><br><span class="line">ourStorage.desk.drawer; // <span class="string">"stapler"</span></span><br></pre></td></tr></table></figure>
-<h3 id="Math-random-函数"><a href="#Math-random-函数" class="headerlink" title="Math.random()函数"></a>Math.random()函数</h3><p>用来生成一个在0(包括0)到1(不包括1)之间的随机小数，因此Math.random()可能返回0但绝不会返回1。</p>
-<h3 id="Math-floor-函数"><a href="#Math-floor-函数" class="headerlink" title="Math.floor()函数"></a>Math.floor()函数</h3><p>向下取整 获得它最近的整数。</p>
-<ul>
-<li>生成0-19之间的随机数</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">json = json.filter(<span class="keyword">function</span>(val) &#123;</span><br><span class="line">  <span class="built_in">return</span> (val.id !== 1);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="浏览器获得前所在位置"><a href="#浏览器获得前所在位置" class="headerlink" title="浏览器获得前所在位置"></a>浏览器获得前所在位置</h3><ul>
+<li>我们还可以通过浏览器navigator获得我们当前所在的位置geolocation。</li>
+<li>位置的信息包括经度longitude和纬度latitude。</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(Math.random() * 20);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>生成一个在min和max之间的随机数</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(Math.random() * (max - min + 1)) + min</span><br></pre></td></tr></table></figure>
-<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p>Regular expressions 正则表达式被用来根据某种匹配模式来寻找strings中的某些单词。</p>
-<ul>
-<li>找到字符串The dog chased the cat中单词 the</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> /the/gi </span><br><span class="line"> </span><br><span class="line">/ 是这个正则表达式的头部</span><br><span class="line"></span><br><span class="line">the 是我们想要匹配的模式</span><br><span class="line"></span><br><span class="line">/ 是这个正则表达式的尾部</span><br><span class="line"></span><br><span class="line">g 代表着 global(全局)，意味着返回所有的匹配而不仅仅是第一个。</span><br><span class="line"></span><br><span class="line">i 代表着忽略大小写，意思是当我们寻找匹配的字符串的时候忽略掉字母的大小写。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>数字选择器\d</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/\d/g</span><br><span class="line">/\d+/g		它允许这个正则表达式匹配一个或更多数字,尾部的g是<span class="string">'global'</span>的简写，意思是允许这个正则表达式找到所有的匹配而不是仅仅找到第一个匹配</span><br></pre></td></tr></table></figure>
-<ul>
-<li>空白字符\s</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\s+/g		选取句子中的所有空白字符。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>非空白字符\S</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\S/g     匹配所有非空白字符</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (navigator.geolocation) &#123;</span><br><span class="line">  navigator.geolocation.getCurrentPosition(<span class="keyword">function</span>(position) &#123;</span><br><span class="line">    $(<span class="string">"#data"</span>).html(<span class="string">"latitude: "</span> + position.coords.latitude + <span class="string">"&lt;br&gt;longitude: "</span> + position.coords.longitude);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -303,7 +272,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/02/04/Basic-JavaScript/" data-id="cjdpzkxcx000bkxtq7mf9gliv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/02/16/JSON-APIs-and-Ajax/" data-id="cjdpzkxci0000kxtq0nc13o60" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -375,13 +344,25 @@
         </footer>
     </div>
     
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Where do I belong(数组排序并找出元素索引)</div>
+        </a>
+    
+</nav>
+
+
+    
 </article>
 
 
+    
+    
 
-    <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
-    </nav>
 </section>
             
                 

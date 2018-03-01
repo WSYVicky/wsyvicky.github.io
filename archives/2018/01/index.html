@@ -1,12 +1,483 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="author" content="John Doe"><title>Vicky Home</title><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#e01258">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#e01258">
-<meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#e01258"><style>@charset "UTF-8";html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}footer,header,nav{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent;-webkit-text-decoration-skip:objects}img{border-style:none}input{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}input{overflow:visible}[type=checkbox]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font-size:14px}@media screen and (min-width:332px){html{font-size:calc(14px + 4 * (100vw - 332px)/ 328)}}@media screen and (min-width:660px){html{font-size:18px}}body{font-size:1rem;line-height:1.6}h1{font-size:1.29454rem;margin-top:1.78755rem}p{margin-top:1.06667rem}body{font-family:serif;color:#232323;font-style:normal;font-weight:400}h1{font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:calc(50 / 1000 * 1em)}.fonts-stage-1 body{font-family:"Vollkorn Subset";font-style:normal;font-weight:400}.fonts-stage-3 h1{font-family:"Playfair Display Bold Subset"}.header{background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.4),rgba(224,18,88,.6)),-webkit-gradient(linear,left top,right top,color-stop(50%,rgba(224,18,88,.5)),color-stop(50%,rgba(224,18,88,.4)));background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.4),rgba(224,18,88,.6)),linear-gradient(to right,rgba(224,18,88,.5) 50%,rgba(224,18,88,.4) 50%)}@media (min-width:41.25em){.header{background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.6),rgba(224,18,88,.4)),-webkit-gradient(linear,left top,left bottom,color-stop(48%,rgba(224,18,88,.4)),color-stop(48%,rgba(224,18,88,.7)));background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.6),rgba(224,18,88,.4)),linear-gradient(to bottom,rgba(224,18,88,.4) 48%,rgba(224,18,88,.7) 48%)}}.nav__checkbox{position:absolute;left:-9999px}.nav__toggle{display:block;position:absolute;top:calc(1.94444 * 1rem);right:calc(1.11111 * 1rem);height:calc(1.66667 * 1rem);width:calc(1.66667 * 1rem);border-radius:calc(.27778 * 1rem);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(20%,#e01258),color-stop(20%,transparent),color-stop(40%,transparent),color-stop(40%,#e01258),color-stop(60%,#e01258),color-stop(60%,transparent),color-stop(80%,transparent),color-stop(80%,#e01258));background-image:linear-gradient(to bottom,#e01258 20%,transparent 20%,transparent 40%,#e01258 40%,#e01258 60%,transparent 60%,transparent 80%,#e01258 80%);text-indent:-9999px;z-index:1}@media (min-width:41.25em){.nav__toggle{display:none}}.nav__list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;list-style:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin:0}@media (min-width:41.25em){.nav__list{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}}.nav__item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:120px;font-size:.77248rem}@media (max-width:41.24em){.nav__item:not(:nth-child(1)){display:none}}@media (min-width:41.25em){.nav__list--4 .nav__item:nth-child(-n+3){-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.nav__list--4 .nav__item:nth-child(n+4){-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}}[class*=nav__list--] .nav__item:nth-child(1){-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.nav__link{padding:calc(.83333 * 1rem) 0;position:relative;color:#fff;text-decoration:none;text-transform:uppercase;text-shadow:0 1px 1px #e01258;letter-spacing:calc(100 / 1000 * 1em)}.footer{font-family:sans-serif;background-image:radial-gradient(circle at center bottom,rgba(250,196,210,.6),rgba(250,196,214,.4)),-webkit-gradient(linear,left top,left bottom,color-stop(48%,rgba(250,196,214,.4)),color-stop(48%,rgba(250,196,214,.7)));background-image:radial-gradient(circle at center bottom,rgba(250,196,210,.6),rgba(250,196,214,.4)),linear-gradient(to bottom,rgba(250,196,214,.4) 48%,rgba(250,196,214,.7) 48%);color:#e01258;font-size:.7242rem;margin-top:calc(1.11111 * 1rem);text-align:center}.footer:not(:empty){padding:calc(.27778 * 1rem)}.footer p{margin:calc(.55556 * 1rem) 0}.contact{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;list-style:none;padding:0;margin:0}.contact__item+.contact__item{margin-left:calc(.55556 * 1rem)}body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap}.wrapper{margin-left:auto;margin-right:auto;padding:calc(.55556 * 1rem);max-width:calc(100% - calc(1.11111 * 1rem))}@media (min-width:41.25em){.wrapper{width:640px;padding:calc(.55556 * 1rem) 0}}.tally{font-family:Vollkorn;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.6),rgba(224,18,88,.4)),-webkit-gradient(linear,left top,left bottom,color-stop(48%,rgba(224,18,88,.4)),color-stop(48%,rgba(224,18,88,.7)));background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.6),rgba(224,18,88,.4)),linear-gradient(to bottom,rgba(224,18,88,.4) 48%,rgba(224,18,88,.7) 48%);color:#fff;font-size:.77248rem;padding:calc(.27778 * 1rem) calc(.83333 * 1rem) calc(.11111 * 1rem);margin-top:calc(.27778 * 1rem);margin-bottom:calc(.27778 * 1rem);border-radius:calc(.22222 * 1rem);text-decoration:none;letter-spacing:calc(50 / 1000 * 1em);-webkit-box-shadow:0 1px 4px -1px rgba(35,35,35,.6);box-shadow:0 1px 4px -1px rgba(35,35,35,.6);text-shadow:0 1px 1px #e01258;position:relative}.tally[href*="//twitter"]{text-shadow:0 1px 1px #55acee;background-image:radial-gradient(circle at center bottom,rgba(39,133,233,.6),rgba(39,149,233,.4)),-webkit-gradient(linear,left top,left bottom,color-stop(48%,rgba(39,149,233,.4)),color-stop(48%,rgba(39,149,233,.7)));background-image:radial-gradient(circle at center bottom,rgba(39,133,233,.6),rgba(39,149,233,.4)),linear-gradient(to bottom,rgba(39,149,233,.4) 48%,rgba(39,149,233,.7) 48%)}.tally[href*="//github"]{text-shadow:0 1px 1px #2f2f2f;background-image:radial-gradient(circle at center bottom,rgba(47,47,47,.6),rgba(47,47,47,.4)),-webkit-gradient(linear,left top,left bottom,color-stop(48%,rgba(47,47,47,.4)),color-stop(48%,rgba(47,47,47,.7)));background-image:radial-gradient(circle at center bottom,rgba(47,47,47,.6),rgba(47,47,47,.4)),linear-gradient(to bottom,rgba(47,47,47,.4) 48%,rgba(47,47,47,.7) 48%)}.tally span{text-transform:capitalize}.home{color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:calc(1.11111 * 1rem)}@supports (display:grid){.home{display:grid;grid-template-columns:repeat(3,minmax(auto,1fr));grid-template-rows:repeat(4,1fr);grid-row-gap:calc(1.66667 * 1rem)}}.home a{color:inherit;word-break:break-word}.home a:after{content:"→";display:inline-block;margin-left:calc(.55556 * 1rem);-webkit-transform:rotate(-270deg) scale(0);transform:rotate(-270deg) scale(0)}.home__box{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:calc(2.22222 * 1rem) calc(1.11111 * 1rem) calc(1.11111 * 1rem)}.home__box:not(:last-of-type){margin-bottom:calc(1.66667 * 1rem)}@supports (display:grid){.home__box{min-height:unset}.home__box:not(:last-of-type){margin-bottom:unset}}.home__box:nth-of-type(odd){background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.4),rgba(224,18,88,.6)),-webkit-gradient(linear,left top,right top,color-stop(50%,rgba(224,18,88,.5)),color-stop(50%,rgba(224,18,88,.4)));background-image:radial-gradient(circle at center bottom,rgba(224,18,71,.4),rgba(224,18,88,.6)),linear-gradient(to right,rgba(224,18,88,.5) 50%,rgba(224,18,88,.4) 50%)}@supports (display:grid){.home__box:nth-of-type(odd){grid-column:1/span 2}}.home__box:nth-of-type(even){background-image:radial-gradient(circle at center bottom,rgba(35,35,35,.4),rgba(35,35,35,.6)),-webkit-gradient(linear,left top,right top,color-stop(50%,rgba(35,35,35,.5)),color-stop(50%,rgba(35,35,35,.4)));background-image:radial-gradient(circle at center bottom,rgba(35,35,35,.4),rgba(35,35,35,.6)),linear-gradient(to right,rgba(35,35,35,.5) 50%,rgba(35,35,35,.4) 50%)}@supports (display:grid){.home__box:nth-of-type(even){grid-column:2/span 2}}@supports (display:grid){.home__box:nth-of-type(1){grid-row:1}.home__box:nth-of-type(2){grid-row:2}.home__box:nth-of-type(3){grid-row:3}.home__box:nth-of-type(4){grid-row:4}}.home__box h1{letter-spacing:calc(100 / 1000 * 1em)}.home__box p{margin-top:0;margin-bottom:0;letter-spacing:calc(50 / 1000 * 1em)}.home__box ul{margin:0}body{color:#383738;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:100vh}.wrapper{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.sig{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;background-image:-webkit-gradient(linear,left top,right top,from(rgba(30,217,217,.15)),to(rgba(30,186,218,.15)));background-image:linear-gradient(to right,rgba(30,217,217,.15),rgba(30,186,218,.15));color:#383738;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;line-height:1;padding:calc(.05556 * 1rem) calc(.55556 * 1rem) calc(.33333 * 1rem)}.sig p{font-size:.9375rem;margin:0}.sig__link{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;text-decoration:none}
-/*# sourceMappingURL=style.critical.min.css.map */
-</style></head><body><header class="header"><nav class="nav"><input class="nav__checkbox" type="checkbox" id="NavToggle"><label class="nav__toggle" for="NavToggle">Toggle navigation</label><ul class="nav__list"><li class="nav__item"><a class="nav__link" href="/">Home</a></li><li class="nav__item"><a class="nav__link" href="/archives">Archives</a></li></ul></nav></header><div class="wrapper"><div class="articles"><article class="article"><h1 class="article__title"><a class="link" href="/2018/01/31/HTML5-and-CSS/">HTML5 and CSS</a></h1><p><a class="tally" href="/2018/01/31/HTML5-and-CSS/">Read more</a></p></article><article class="article"><h1 class="article__title"><a class="link" href="/2018/01/24/我是如何利用hexo搭建自己的博客的/">我是如何利用hexo搭建自己的博客的</a></h1><p><a class="tally" href="/2018/01/24/我是如何利用hexo搭建自己的博客的/">Read more</a></p></article><article class="article"><h1 class="article__title"><a class="link" href="/2018/01/23/hello-world/">Hello World</a></h1><p><a class="tally" href="/2018/01/23/hello-world/">Read more</a></p></article></div></div><footer class="footer"><div class="copyright"><p>&copy; Vicky Home 2018</p></div></footer><noscript id="deferredStyles"><link rel="stylesheet" href="/css/foft.min.css"><link rel="stylesheet" href="/css/style.min.css"></noscript><script>"use strict";var loadDeferredStyles=function(){var e=document.getElementById("deferredStyles"),t=document.createElement("div");t.innerHTML=e.textContent,document.body.appendChild(t),e.parentElement.removeChild(e)};window.requestAnimationFrame?window.requestAnimationFrame(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener("load",loadDeferredStyles);</script><script src="/js/index.min.js" async></script><script>"use strict";var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},FontFaceObserver=void 0;!function(){var t,e=[];function n(){for(;e.length;)e[0](),e.shift()}function o(t){this.a=i,this.b=void 0,this.f=[];var e=this;try{t(function(t){!function t(e,n){if(e.a==i){if(n==e)throw new TypeError;var o=!1;try{var a=n&&n.then;if(null!=n&&"object"==(void 0===n?"undefined":_typeof(n))&&"function"==typeof a)return void a.call(n,function(n){o||t(e,n),o=!0},function(t){o||s(e,t),o=!0})}catch(t){return void(o||s(e,t))}e.a=0,e.b=n,r(e)}}(e,t)},function(t){s(e,t)})}catch(t){s(e,t)}}t=function(){setTimeout(n)};var i=2;function a(t){return new o(function(e){e(t)})}function s(t,e){if(t.a==i){if(e==t)throw new TypeError;t.a=1,t.b=e,r(t)}}function r(n){var o;o=function(){if(n.a!=i)for(;n.f.length;){var t=(a=n.f.shift())[0],e=a[1],o=a[2],a=a[3];try{0==n.a?o("function"==typeof t?t.call(void 0,n.b):n.b):1==n.a&&("function"==typeof e?o(e.call(void 0,n.b)):a(n.b))}catch(t){a(t)}}},e.push(o),1==e.length&&t()}o.prototype.g=function(t){return this.c(void 0,t)},o.prototype.c=function(t,e){var n=this;return new o(function(o,i){n.f.push([t,e,o,i]),r(n)})},window.Promise||(window.Promise=o,window.Promise.resolve=a,window.Promise.reject=function(t){return new o(function(e,n){n(t)})},window.Promise.race=function(t){return new o(function(e,n){for(var o=0;o<t.length;o+=1)a(t[o]).c(e,n)})},window.Promise.all=function(t){return new o(function(e,n){function o(n){return function(o){s[n]=o,(i+=1)==t.length&&e(s)}}var i=0,s=[];0==t.length&&e(s);for(var r=0;r<t.length;r+=1)a(t[r]).c(o(r),n)})},window.Promise.prototype.then=o.prototype.c,window.Promise.prototype.catch=o.prototype.g)}(),function(){function t(t,e){document.addEventListener?t.addEventListener("scroll",e,!1):t.attachEvent("scroll",e)}function e(t){this.a=document.createElement("div"),this.a.setAttribute("aria-hidden","true"),this.a.appendChild(document.createTextNode(t)),this.b=document.createElement("span"),this.c=document.createElement("span"),this.h=document.createElement("span"),this.f=document.createElement("span"),this.g=-1,this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;",this.b.appendChild(this.h),this.c.appendChild(this.f),this.a.appendChild(this.b),this.a.appendChild(this.c)}function n(t,e){t.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:"+e+";"}function o(t){var e=t.a.offsetWidth,n=e+100;return t.f.style.width=n+"px",t.c.scrollLeft=n,t.b.scrollLeft=t.b.scrollWidth+100,t.g!==e&&(t.g=e,!0)}function i(e,n){function i(){var t=a;o(t)&&t.a.parentNode&&n(t.g)}var a=e;t(e.b,i),t(e.c,i),o(e)}function a(t,e){var n=e||{};this.family=t,this.style=n.style||"normal",this.weight=n.weight||"normal",this.stretch=n.stretch||"normal"}var s=null,r=null,c=null,l=null;function d(){return null===l&&(l=!!document.fonts),l}function f(t,e){return[t.style,t.weight,function(){if(null===c){var t=document.createElement("div");try{t.style.font="condensed 100px sans-serif"}catch(t){}c=""!==t.style.font}return c}()?t.stretch:"","100px",e].join(" ")}a.prototype.load=function(t,o){var a=this,c=t||"BESbswy",l=0,u=o||3e3,h=(new Date).getTime();return new Promise(function(t,o){if(d()&&!function(){if(null===r)if(d()&&/Apple/.test(window.navigator.vendor)){var t=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(window.navigator.userAgent);r=!!t&&603>parseInt(t[1],10)}else r=!1;return r}()){var m=new Promise(function(t,e){!function n(){(new Date).getTime()-h>=u?e():document.fonts.load(f(a,'"'+a.family+'"'),c).then(function(e){1<=e.length?t():setTimeout(n,25)},function(){e()})}()}),p=new Promise(function(t,e){l=setTimeout(e,u)});Promise.race([p,m]).then(function(){clearTimeout(l),t(a)},function(){o(a)})}else w=function(){function r(){var e;(e=-1!=w&&-1!=y||-1!=w&&-1!=v||-1!=y&&-1!=v)&&((e=w!=y&&w!=v&&y!=v)||(null===s&&(e=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),s=!!e&&(536>parseInt(e[1],10)||536===parseInt(e[1],10)&&11>=parseInt(e[2],10))),e=s&&(w==g&&y==g&&v==g||w==b&&y==b&&v==b||w==x&&y==x&&v==x)),e=!e),e&&(E.parentNode&&E.parentNode.removeChild(E),clearTimeout(l),t(a))}var d=new e(c),m=new e(c),p=new e(c),w=-1,y=-1,v=-1,g=-1,b=-1,x=-1,E=document.createElement("div");E.dir="ltr",n(d,f(a,"sans-serif")),n(m,f(a,"serif")),n(p,f(a,"monospace")),E.appendChild(d.a),E.appendChild(m.a),E.appendChild(p.a),document.body.appendChild(E),g=d.a.offsetWidth,b=m.a.offsetWidth,x=p.a.offsetWidth,function t(){if((new Date).getTime()-h>=u)E.parentNode&&E.parentNode.removeChild(E),o(a);else{var e=document.hidden;!0!==e&&void 0!==e||(w=d.a.offsetWidth,y=m.a.offsetWidth,v=p.a.offsetWidth,r()),l=setTimeout(t,50)}}(),i(d,function(t){w=t,r()}),n(d,f(a,'"'+a.family+'",sans-serif')),i(m,function(t){y=t,r()}),n(m,f(a,'"'+a.family+'",serif')),i(p,function(t){v=t,r()}),n(p,f(a,'"'+a.family+'",monospace'))},document.body?w():document.addEventListener?document.addEventListener("DOMContentLoaded",function t(){document.removeEventListener("DOMContentLoaded",t),w()}):document.attachEvent("onreadystatechange",function t(){"interactive"!=document.readyState&&"complete"!=document.readyState||(document.detachEvent("onreadystatechange",t),w())});var w})},"object"===("undefined"==typeof module?"undefined":_typeof(module))?module.exports=a:(window.FontFaceObserver=a,window.FontFaceObserver.prototype.load=a.prototype.load)}(),function(){if(window.sessionStorage.criticalFoftDataUriFontsLoaded1)document.documentElement.className+=" fonts-stage-1 fonts-stage-2";else{var t=new FontFaceObserver("Vollkorn Subset",{weight:"normal",style:"normal"});Promise.all([t.load()]).then(function(){document.documentElement.className+=" fonts-stage-1";var t=new FontFaceObserver("Vollkorn",{weight:"normal",style:"normal"});console.log("Subset font1 loaded."),Promise.all([t.load()]).then(function(){document.documentElement.className+=" fonts-stage-2",window.sessionStorage.criticalFoftDataUriFontsLoaded1=!0,console.log("Main font1 loaded.")},function(){console.log("Main font1 not loaded.")})},function(){console.log("Subset font1 not loaded.")})}}(),function(){if(window.sessionStorage.criticalFoftDataUriFontsLoaded2)document.documentElement.className+=" fonts-stage-3 fonts-stage-4";else{var t=new FontFaceObserver("Playfair Display Bold Subset",{weight:700,style:"normal"});Promise.all([t.load()]).then(function(){document.documentElement.className+=" fonts-stage-3";var t=new FontFaceObserver("Playfair Display Bold",{weight:700,style:"normal"});console.log("Subset font2 loaded."),Promise.all([t.load()]).then(function(){document.documentElement.className+=" fonts-stage-4",window.sessionStorage.criticalFoftDataUriFontsLoaded2=!0,console.log("Main font2 loaded.")},function(){console.log("Main font2 not loaded.")})},function(){console.log("Subset font2 not loaded.")})}}();</script><div class="sig"><p>Powered by <a class="sig__link" href="https://github.com/maliMirkec/starter-project"><svg width="500" height="500" viewBox="0 0 500 500"><defs><linearGradient id="starter-project-a" x1="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#BA1ADA"/><stop offset="100%" stop-color="#D91A79"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><polygon fill="url(#starter-project-a)" points="130 91 450 91 450 456 50 456 50 56 130 56"/><polygon fill="#1ED9D9" points="300 281 150 356 150 156 300 231 300 156 350 156 350 356 300 356"/></g></svg> Starter Project</a>.</p></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Archive: 2018/1 | Vicky Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Vicky Home">
+<meta property="og:url" content="http://yoursite.com/archives/2018/01/index.html">
+<meta property="og:site_name" content="Vicky Home">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vicky Home">
+    
+
+    
+
+    
+        <link rel="icon" href="/css/images/v_logo.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Vicky Home</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="https://codepen.io/vicky_Wang/full/BYLMQw">Portfolio</a>
+                
+                    <a class="main-nav-link" href="https://github.com/WSYVicky">Github</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/vicky.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="https://codepen.io/vicky_Wang/full/BYLMQw">Portfolio</a></td>
+                
+                    <td><a class="main-nav-link" href="https://github.com/WSYVicky">Github</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/vicky.jpg" />
+            <h2 id="name">王诗瑜</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Shanghai, China</span>
+            <a id="follow" target="_blank" href="https://wsyvicky.github.io/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                11
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                3
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/WSYVicky" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://codepen.io/vicky_Wang/" target="_blank" title="codepen" class=tooltip>
+                            <i class="fa fa-codepen"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.instagram.com/vickylovewsy/?hl=en" target="_blank" title="instagram" class=tooltip>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://weibo.com/p/1005051302289552/home?from=page_100505&mod=TAB&is_all=1#place" target="_blank" title="weibo" class=tooltip>
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><div class="timeline timeline-wrap">
+    
+            <div class="timeline-row timeline-row-major">
+                <span class="node"><i class="fa fa-calendar"></i></span>
+                <h1 class="title">2018</h1>
+            </div>
+        
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
+                
+    
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2018/01/31/HTML5-and-CSS/">HTML5 and CSS</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/01/31/HTML5-and-CSS/">
+            <time datetime="2018-01-31T15:34:47.000Z" itemprop="datePublished">2018-01-31</time>
+        </a>
+    </div>
+
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
+                
+    
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2018/01/24/我是如何利用hexo搭建自己的博客的/">我是如何利用hexo搭建自己的博客的</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/01/24/我是如何利用hexo搭建自己的博客的/">
+            <time datetime="2018-01-24T08:50:57.000Z" itemprop="datePublished">2018-01-24</time>
+        </a>
+    </div>
+
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
+                
+    
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2018/01/23/hello-world/">Hello World</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/01/23/hello-world/">
+            <time datetime="2018-01-23T14:15:02.150Z" itemprop="datePublished">2018-01-23</time>
+        </a>
+    </div>
+
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+</div>
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/23/show-the-local-weather/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/02/23/show-the-local-weather/" class="title">show the local weather</a></p>
+                            <p class="item-date"><time datetime="2018-02-23T03:58:18.000Z" itemprop="datePublished">2018-02-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/16/JSON-APIs-and-Ajax/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/02/16/JSON-APIs-and-Ajax/" class="title">JSON APIs and Ajax</a></p>
+                            <p class="item-date"><time datetime="2018-02-16T13:02:09.000Z" itemprop="datePublished">2018-02-16</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/" class="title">Where do I belong(数组排序并找出元素索引)</a></p>
+                            <p class="item-date"><time datetime="2018-02-14T03:56:17.000Z" itemprop="datePublished">2018-02-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/14/Seek-and-Destroy（摧毁函数）/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/02/14/Seek-and-Destroy（摧毁函数）/" class="title">Seek and Destroy（摧毁函数）</a></p>
+                            <p class="item-date"><time datetime="2018-02-14T02:03:10.000Z" itemprop="datePublished">2018-02-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/10/Object-Oriented-and-Functional-Programming/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/02/10/Object-Oriented-and-Functional-Programming/" class="title">Object Oriented and Functional Programming</a></p>
+                            <p class="item-date"><time datetime="2018-02-10T01:32:35.000Z" itemprop="datePublished">2018-02-10</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/FCC/">FCC</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FCC项目-API-天气预报/">FCC项目 API 天气预报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/FCC/" style="font-size: 10px;">FCC</a> <a href="/tags/FCC项目-API-天气预报/" style="font-size: 10px;">FCC项目 API 天气预报</a> <a href="/tags/算法/" style="font-size: 20px;">算法</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 John Doe<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

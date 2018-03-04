@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="Vicky Home">
-<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:url" content="http://yoursite.com/page/8/index.html">
 <meta property="og:site_name" content="Vicky Home">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vicky Home">
@@ -188,7 +188,7 @@
 
             
             <section id="main">
-    <article id="post-Where-do-I-belong-数组排序并找出元素索引" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Responsive-Design-with-Bootstrap" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -196,7 +196,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/">Where do I belong(数组排序并找出元素索引)</a>
+            <a class="article-title" href="/2018/02/02/Responsive-Design-with-Bootstrap/">Responsive Design with Bootstrap</a>
         </h1>
     
 
@@ -205,19 +205,14 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/">
-            <time datetime="2018-02-14T03:56:17.000Z" itemprop="datePublished">2018-02-14</time>
+        <a href="/2018/02/02/Responsive-Design-with-Bootstrap/">
+            <time datetime="2018-02-02T01:33:01.000Z" itemprop="datePublished">2018-02-02</time>
         </a>
     </div>
 
 
                         
                         
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/算法/">算法</a>
-    </div>
-
                     </div>
                 
             </header>
@@ -226,20 +221,19 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>【题目要求】</p>
-<ul>
-<li>先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。</li>
-<li>举例：where([1,2,3,4], 1.5) 应该返回 1。因为1.5插入到数组[1,2,3,4]后变成[1,1.5,2,3,4]，而1.5对应的索引值就是1。 </li>
-<li>同理，where([20,3,5], 19) 应该返回 2。因为数组会先排序为 [3,5,20]，19插入到数组[3,5,20]后变成[3,5,19,20]，而19对应的索引值就是2。</li>
-</ul>
-<p>【思路】</p>
-<ul>
-<li>创建一个新的数组newArr();</li>
-<li>用arguments() 函数将参数分别放入数组newArr();</li>
-<li>sort() 函数给数组排序</li>
-</ul>
-<p>【代码】</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="built_in">where</span>(arr, num) &#123;</span><br><span class="line">  // 请把你的代码写在这里</span><br><span class="line">  var newArr = [];</span><br><span class="line">  <span class="keyword">for</span>(var i=0; i&lt;arguments[0].length; i++)&#123;</span><br><span class="line">    newArr[i] = arguments[0][i];</span><br><span class="line">  &#125;</span><br><span class="line">  newArr.push(arguments[1]);</span><br><span class="line">  newArr.sort(<span class="keyword">function</span>(a,b)&#123;</span><br><span class="line">  <span class="built_in">return</span> a-b;</span><br><span class="line">  &#125;);</span><br><span class="line">  //<span class="built_in">return</span> newArr;</span><br><span class="line">  <span class="built_in">return</span> newArr.indexOf(num);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">where</span>([2, 20, 10], 19) ;</span><br></pre></td></tr></table></figure>
+            <h3 id="自动匹配页面大小"><a href="#自动匹配页面大小" class="headerlink" title="自动匹配页面大小"></a>自动匹配页面大小</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"</span>/&gt;</span><br><span class="line">我们需要把所有的HTML内容放在class为container-fluid的div下。</span><br><span class="line">&lt;div class=<span class="string">"container-fluid"</span>&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="图片宽度自动布局"><a href="#图片宽度自动布局" class="headerlink" title="图片宽度自动布局"></a>图片宽度自动布局</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"img-responsive"</span></span><br></pre></td></tr></table></figure>
+<h3 id="文字居中"><a href="#文字居中" class="headerlink" title="文字居中"></a>文字居中</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"text-center"</span></span><br></pre></td></tr></table></figure>
+<h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3><p><img src="/2018/02/02/Responsive-Design-with-Bootstrap/btn.png" alt="btn"><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"btn"</span> 简单按钮</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"btn btn-block"</span> 加框框</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"btn btn-block btn-primary"</span> 深蓝色</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"btn btn-block btn-info"</span> 浅蓝色</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"btn btn-block btn-danger"</span> 红色</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"btn btn-default"</span> 默认的按钮样式</span><br></pre></td></tr></table></figure>
+<h3 id="多个元素放在一行"><a href="#多个元素放在一行" class="headerlink" title="多个元素放在一行"></a>多个元素放在一行</h3><p><img src="/2018/02/02/Responsive-Design-with-Bootstrap/row_col.png" alt="row_col"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"row"</span>&gt;</span><br><span class="line">	&lt;div class=<span class="string">"col-xs-4"</span>&gt;&lt;/div&gt;. xs/md *是数字</span><br><span class="line">	&lt;div class=<span class="string">"col-xs-4"</span>&gt;&lt;/div&gt;</span><br><span class="line">	&lt;div class=<span class="string">"col-xs-4"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="添加图标"><a href="#添加图标" class="headerlink" title="添加图标"></a>添加图标</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"</span>/&gt;</span><br><span class="line">&lt;i class=<span class="string">"fa fa-info-circle"</span>&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="创造列的深度感"><a href="#创造列的深度感" class="headerlink" title="创造列的深度感"></a>创造列的深度感</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class=<span class="string">"well"</span></span><br></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -249,7 +243,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/02/14/Where-do-I-belong-数组排序并找出元素索引/" data-id="cje8a58ci0007bttqeahffh6i" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/02/02/Responsive-Design-with-Bootstrap/" data-id="cje8a58cg0005bttql8z246nc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -326,7 +320,7 @@
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
     </nav>
 </section>
             

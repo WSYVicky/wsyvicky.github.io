@@ -141,11 +141,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                11
+                12
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                3
+                4
                 <span>tags</span>
             </div>
         </div>
@@ -188,7 +188,7 @@
 
             
             <section id="main">
-    <article id="post-show-the-local-weather" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Inventory-Update" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -196,7 +196,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/23/show-the-local-weather/">show the local weather</a>
+            <a class="article-title" href="/2018/04/03/Inventory-Update/">Inventory Update</a>
         </h1>
     
 
@@ -205,8 +205,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/02/23/show-the-local-weather/">
-            <time datetime="2018-02-23T03:58:18.000Z" itemprop="datePublished">2018-02-23</time>
+        <a href="/2018/04/03/Inventory-Update/">
+            <time datetime="2018-04-02T16:00:40.000Z" itemprop="datePublished">2018-04-03</time>
         </a>
     </div>
 
@@ -215,7 +215,7 @@
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/FCC项目-API-天气预报/">FCC项目 API 天气预报</a>
+        <a class="tag-link" href="/tags/FCC-算法/">FCC 算法</a>
     </div>
 
                     </div>
@@ -226,12 +226,15 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="编译器：codepen"><a href="#编译器：codepen" class="headerlink" title="编译器：codepen"></a>编译器：codepen</h3><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
-<li><p>调用openweathermap API</p>
-<p> 使用 getJSON 方法得到 API 数据，在控制台打印查看得到的数据（这一步非必选，不过是我习惯每做完一步，都打印确认一下结果。）。</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  $(document).ready(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  var api=<span class="string">'http://api.openweathermap.org/data/2.5/weather?id=2172797&amp;appid=da52b81bb3f7db80c6b8b5d9575a8471'</span>;</span><br><span class="line">  $.getJSON(api,<span class="keyword">function</span>(data)&#123;</span><br><span class="line">    alert(data.coord.lat);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+            <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>依照一个存着新进货物的二维数组，更新存着现有库存(在 arr1 中)的二维数组. 如果货物已存在则更新数量 . 如果没有对应货物则把其加入到数组中，更新最新的数量. 返回当前的库存数组，且按货物名称的字母顺序排列.</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><img src="/2018/04/03/Inventory-Update/1.png" alt=""></p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><ul>
+<li>updateInventory([[21, “Bowling Ball”], [2, “Dirty Sock”], [1, “Hair Pin”], [5, “Microphone”]], [[2, “Hair Pin”], [3, “Half-Eaten Apple”], [67, “Bowling Ball”], [7, “Toothpaste”]]) <strong><em>应该返回 </em></strong>[[88, “Bowling Ball”], [2, “Dirty Sock”], [3, “Hair Pin”], [3, “Half-Eaten Apple”], [5, “Microphone”], [7, “Toothpaste”]].</li>
+<li>updateInventory([[21, “Bowling Ball”], [2, “Dirty Sock”], [1, “Hair Pin”], [5, “Microphone”]], []) <strong><em>应该返回 </em></strong>[[21, “Bowling Ball”], [2, “Dirty Sock”], [1, “Hair Pin”], [5, “Microphone”]].</li>
+<li>updateInventory([], [[2, “Hair Pin”], [3, “Half-Eaten Apple”], [67, “Bowling Ball”], [7, “Toothpaste”]]) <strong><em>应该返回 </em></strong>[[67, “Bowling Ball”], [2, “Hair Pin”], [3, “Half-Eaten Apple”], [7, “Toothpaste”]].</li>
+<li>updateInventory([[0, “Bowling Ball”], [0, “Dirty Sock”], [0, “Hair Pin”], [0, “Microphone”]], [[1, “Hair Pin”], [1, “Half-Eaten Apple”], [1, “Bowling Ball”], [1, “Toothpaste”]])<strong><em> 应该返回 </em></strong>[[1, “Bowling Ball”], [0, “Dirty Sock”], [1, “Hair Pin”], [1, “Half-Eaten Apple”], [0, “Microphone”], [1, “Toothpaste”]].</li>
+</ul>
+
         
         </div>
         <footer class="article-footer">
@@ -241,7 +244,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/02/23/show-the-local-weather/" data-id="cje8a58cn000cbttqsnkg8bug" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/04/03/Inventory-Update/" data-id="cjfig48rf000jo8tq3lfrxkry" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -318,7 +321,7 @@
 
 
     <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
 </section>
             

@@ -141,11 +141,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                11
+                12
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                3
+                4
                 <span>tags</span>
             </div>
         </div>
@@ -188,7 +188,7 @@
 
             
             <section id="main">
-    <article id="post-我是如何利用hexo搭建自己的博客的" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-HTML5-and-CSS" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -196,7 +196,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/01/24/我是如何利用hexo搭建自己的博客的/">我是如何利用hexo搭建自己的博客的</a>
+            <a class="article-title" href="/2018/01/31/HTML5-and-CSS/">HTML5 and CSS</a>
         </h1>
     
 
@@ -205,8 +205,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/01/24/我是如何利用hexo搭建自己的博客的/">
-            <time datetime="2018-01-24T08:50:57.000Z" itemprop="datePublished">2018-01-24</time>
+        <a href="/2018/01/31/HTML5-and-CSS/">
+            <time datetime="2018-01-31T15:34:47.000Z" itemprop="datePublished">2018-01-31</time>
         </a>
     </div>
 
@@ -221,41 +221,28 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h1 id="利用Hexo搭建自己的个人博客（MacBook-Pro）"><a href="#利用Hexo搭建自己的个人博客（MacBook-Pro）" class="headerlink" title="利用Hexo搭建自己的个人博客（MacBook Pro）"></a>利用Hexo搭建自己的个人博客（MacBook Pro）</h1><h2 id="一-环境安装"><a href="#一-环境安装" class="headerlink" title="(一)环境安装"></a>(一)环境安装</h2><ol>
-<li>npm的安装</li>
-<li>hexo的安装<br><br><code>$ npm install hexo-cli -g</code><br></li>
-</ol>
-<h2 id="（二）本地博客搭建"><a href="#（二）本地博客搭建" class="headerlink" title="（二）本地博客搭建"></a>（二）本地博客搭建</h2><ol>
-<li>本地初始化一个名为“blog”的文件夹<br><br><code>$ hexo init blog</code></li>
-<li>进入blog文件夹<br><br><code>$ cd blog</code></li>
-<li>在文件夹中安装npm<br><br><code>$ npm install</code></li>
-<li>启动hexo sever<br><br><code>$ hexo server</code><br></li>
-</ol>
-<h2 id="（三）将本地blog部署到GitHub上"><a href="#（三）将本地blog部署到GitHub上" class="headerlink" title="（三）将本地blog部署到GitHub上"></a>（三）将本地blog部署到GitHub上</h2><ol>
-<li>在GitHub上新建一个profile<br><img src="/2018/01/24/我是如何利用hexo搭建自己的博客的/repository.png" alt="repository"></li>
-<li>域名填写要根据GitHub账户名来定。</li>
-<li>配置本地ssh。在终端输入：<br><br><code>$ git config --global user.name &quot;WSYVicky&quot;</code><br><code>$ git config --global user.mail &quot;1248965945@qq.com&quot;</code></li>
-<li>生成本地公钥和秘钥<br><br><code>$ ssh-keygen -t rsa -C &quot;1248965945@qq.com&quot;</code></li>
-</ol>
-<h2 id="（四）修改本地-ssh-文件"><a href="#（四）修改本地-ssh-文件" class="headerlink" title="（四）修改本地.ssh/文件"></a>（四）修改本地.ssh/文件</h2><ol>
-<li>用编辑器打开.ssh/文件下的id_rsa.pub文件</li>
-<li>在GitHub上新建一个ssh keys，将id_rsa.pub文件的内容复制到这里：<br><img src="/2018/01/24/我是如何利用hexo搭建自己的博客的/sshkeys.png" alt="sshkeys"></li>
-<li>测试ssh能不能打通这个账号,在终端输入：<br><br><code>ssh -T git@github.com</code><br>显示successfully就是成功了！</li>
-</ol>
-<h2 id="（五）下载一些hexo的插件"><a href="#（五）下载一些hexo的插件" class="headerlink" title="（五）下载一些hexo的插件"></a>（五）下载一些hexo的插件</h2><ol>
-<li><code>$ npm install hexo-deployer-git --save</code></li>
-<li>打开_config.yml文件,修改以下代码：<br><img src="/2018/01/24/我是如何利用hexo搭建自己的博客的/changeconfig.png" alt="changeconfig"><br>其中repo是从你自己的GitHub中wsyvicky.github.io中复制过来的，点击保存！<br></li>
-<li>测试部署<br><br><code>$ hexo deploy</code></li>
-<li>刷新wsyvicky.github.io，部署成功啦！</li>
-</ol>
-<h2 id="（6）修改主题"><a href="#（6）修改主题" class="headerlink" title="（6）修改主题"></a>（6）修改主题</h2><ol>
-<li>在hexo的官网上有很多主题，我这里用了一个icarus的主题，然后打开他的GitHub，按照步骤去下载。</li>
-<li>修改blog下的_config.yml文件,将theme改成下载好的主题名字。<br><code>theme: icarus</code></li>
-<li>将修改好的_config.yml文件复制到blog/themes/icarus目录下<br><code>$ cp _config.yml.example _config.yml</code></li>
-<li><code>$ hexo s</code>去<a href="http://localhost:4000/看是否成功。" target="_blank" rel="noopener">http://localhost:4000/看是否成功。</a></li>
-<li><code>$ hexo clean &amp;&amp; hexo g -d</code>清除本地垃圾，并且完成部署！</li>
-<li>主题修改完成啦！</li>
-</ol>
+            <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--和--&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="改变某些文本颜色"><a href="#改变某些文本颜色" class="headerlink" title="改变某些文本颜色"></a>改变某些文本颜色</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2 style=<span class="string">"color: blue"</span>&gt;CatPhotoApp&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> &lt;style&gt;</span><br><span class="line">  选择器 &#123;属性名称: 属性值;&#125;</span><br><span class="line">  h2 &#123;color: red;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  .blue-text &#123;</span><br><span class="line">    color: blue;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">然后在h2元素上应用我们声明的类选择器：</span><br><span class="line">&lt;h2 class=<span class="string">"blue-text"</span>&gt;CatPhotoApp&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="字号"><a href="#字号" class="headerlink" title="字号"></a>字号</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">h1 &#123;</span><br><span class="line">  font-size: 30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">h1 &#123;</span><br><span class="line">  font-family: Sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="字体降级"><a href="#字体降级" class="headerlink" title="字体降级"></a>字体降级</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Helvetica字体不可用时自动降级使用Sans-Serif字体</span><br><span class="line">p </span><br><span class="line">&#123;</span><br><span class="line">  font-family: Helvetica, Sans-Serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  .thin-red-border &#123;</span><br><span class="line">    border-color: red;</span><br><span class="line">    border-width: 5px;</span><br><span class="line">    border-style: solid; 实线</span><br><span class="line">    border-radius: 10px; 边框半径，变圆</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Here<span class="string">'s a &lt;a href="http://freecodecamp.cn"&gt; link to FreeCodeCamp中文社区 &lt;/a&gt; for you to follow.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Nesting（嵌套）"><a href="#Nesting（嵌套）" class="headerlink" title="Nesting（嵌套）"></a>Nesting（嵌套）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Here<span class="string">'s a &lt;a href="http://freecodecamp.cn"&gt; link to FreeCodeCamp中文社区 &lt;/a&gt; for you to follow.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a>alt属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=<span class="string">"www.your-image-source.com/your-image.jpg"</span> alt=<span class="string">"your alt text"</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="带项目符号的列表"><a href="#带项目符号的列表" class="headerlink" title="带项目符号的列表"></a>带项目符号的列表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt;milk&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;cheese&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="数字编号列表"><a href="#数字编号列表" class="headerlink" title="数字编号列表"></a>数字编号列表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line"> 	 &lt;li&gt;Garfield&lt;/li&gt;</span><br><span class="line">  	 &lt;li&gt;Sylvester&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> placeholder=<span class="string">"cat photo URL"</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入的元素为必填项</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> placeholder=<span class="string">"cat photo URL"</span> required&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="form元素添加一个action属性"><a href="#form元素添加一个action属性" class="headerlink" title="form元素添加一个action属性"></a>form元素添加一个action属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">action属性的值指定了表单提交到服务器的地址。</span><br><span class="line">&lt;form action=<span class="string">"/url-where-you-want-to-submit-form-data"</span>&gt;&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="单选按钮-复选按钮-默认选项"><a href="#单选按钮-复选按钮-默认选项" class="headerlink" title="单选按钮 复选按钮 默认选项"></a>单选按钮 复选按钮 默认选项</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">单选按钮</span><br><span class="line">&lt;label&gt;&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"indoor-outdoor"</span>&gt; Indoor&lt;/label&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">复选按钮</span><br><span class="line">&lt;label&gt;&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"personality"</span>&gt; Loving&lt;/label&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">默认选项</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"test-name"</span> checked&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="元素的背景颜色"><a href="#元素的背景颜色" class="headerlink" title="元素的背景颜色"></a>元素的背景颜色</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.green-background &#123;</span><br><span class="line">  background-color: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">定义类选择器必须添加 . 为前缀;</span><br><span class="line">定义ID选择器必须添加 <span class="comment"># 为前缀。</span></span><br><span class="line"><span class="comment">#cat-photo-element &#123;</span></span><br><span class="line">  background-color: green; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="style覆盖"><a href="#style覆盖" class="headerlink" title="style覆盖"></a>style覆盖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!important &gt; <span class="keyword">in</span>-line style（行内样式）&gt; id &gt; class</span><br></pre></td></tr></table></figure>
 
         
         </div>
@@ -266,7 +253,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/01/24/我是如何利用hexo搭建自己的博客的/" data-id="cje8a58cp000fbttqildsoqz2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/01/31/HTML5-and-CSS/" data-id="cjfig125x000io8tq8nv7zp9g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -343,7 +330,7 @@
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/9/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/11/">Next &raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/9/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/11/">Next &raquo;</a>
     </nav>
 </section>
             

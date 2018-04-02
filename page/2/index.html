@@ -141,11 +141,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                11
+                12
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                3
+                4
                 <span>tags</span>
             </div>
         </div>
@@ -188,7 +188,7 @@
 
             
             <section id="main">
-    <article id="post-JSON-APIs-and-Ajax" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-show-the-local-weather" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -196,7 +196,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/16/JSON-APIs-and-Ajax/">JSON APIs and Ajax</a>
+            <a class="article-title" href="/2018/02/23/show-the-local-weather/">show the local weather</a>
         </h1>
     
 
@@ -205,8 +205,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/02/16/JSON-APIs-and-Ajax/">
-            <time datetime="2018-02-16T13:02:09.000Z" itemprop="datePublished">2018-02-16</time>
+        <a href="/2018/02/23/show-the-local-weather/">
+            <time datetime="2018-02-23T03:58:18.000Z" itemprop="datePublished">2018-02-23</time>
         </a>
     </div>
 
@@ -215,7 +215,7 @@
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/FCC/">FCC</a>
+        <a class="tag-link" href="/tags/FCC项目-API-天气预报/">FCC项目 API 天气预报</a>
     </div>
 
                     </div>
@@ -226,27 +226,12 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="document-ready"><a href="#document-ready" class="headerlink" title="$(document).ready()"></a>$(document).ready()</h3><p>这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>,<span class="keyword">function</span>()</span><br><span class="line">  	&#123;  </span><br><span class="line">  		$(<span class="string">".message"</span>).html(<span class="string">"Here is the message"</span>);</span><br><span class="line">  	&#125;);</span><br><span class="line">  // 点击<span class="string">"Get Message"</span>按钮，将class为message 的元素的文本改为：“Here is the message”</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="API接口、JSON数据"><a href="#API接口、JSON数据" class="headerlink" title="API接口、JSON数据"></a>API接口、JSON数据</h3><ul>
-<li>点击”Get Message”按钮。</li>
-<li>你的Ajax函数将把文字”The message will go here”替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="keyword">function</span>(json) &#123;</span><br><span class="line">      $(<span class="string">".message"</span>).html(JSON.stringify(json));</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="forEach-函数"><a href="#forEach-函数" class="headerlink" title=".forEach()函数"></a>.forEach()函数</h3><ul>
-<li>循环遍历JSON数据写到htmll变量中</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line"></span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  </span><br><span class="line">      $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="keyword">function</span>(json) &#123;</span><br><span class="line">      var html = <span class="string">""</span>;</span><br><span class="line">      json.forEach(<span class="keyword">function</span>(val) &#123;</span><br><span class="line">        var keys = Object.keys(val);</span><br><span class="line">        html += <span class="string">"&lt;div class = 'cat'&gt;"</span>;</span><br><span class="line">        keys.forEach(<span class="keyword">function</span>(key) &#123;</span><br><span class="line">        html += <span class="string">"&lt;b&gt;"</span> + key + <span class="string">"&lt;/b&gt;: "</span> + val[key] + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        html += <span class="string">"&lt;/div&gt;&lt;br&gt;"</span>;</span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">".message"</span>).html(html);</span><br><span class="line"></span><br><span class="line">      &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="显示-JSON-数组中-img-元素的图片"><a href="#显示-JSON-数组中-img-元素的图片" class="headerlink" title="显示 JSON 数组中 img 元素的图片"></a>显示 JSON 数组中 img 元素的图片</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line"></span><br><span class="line">  $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="keyword">function</span>(json) &#123;</span><br><span class="line"></span><br><span class="line">      var html = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">      json.forEach(<span class="keyword">function</span>(val) &#123;</span><br><span class="line"></span><br><span class="line">        html += <span class="string">"&lt;div class = 'cat'&gt;"</span>;</span><br><span class="line">        </span><br><span class="line">        html += <span class="string">"&lt;img src = '"</span> + val.imageLink + <span class="string">"'&gt;"</span>;</span><br><span class="line">	//当我们在遍历这些对象时，我们用imageLink的属性来显示img元素的图片。</span><br><span class="line"></span><br><span class="line">        html += <span class="string">"&lt;/div&gt;"</span>;</span><br><span class="line"></span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">".message"</span>).html(html);</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="JSON-API过滤器"><a href="#JSON-API过滤器" class="headerlink" title="JSON API过滤器"></a>JSON API过滤器</h3><ul>
-<li>我们把其中 “id” 键的值为1的图片过滤掉。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">json = json.filter(<span class="keyword">function</span>(val) &#123;</span><br><span class="line">  <span class="built_in">return</span> (val.id !== 1);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="浏览器获得前所在位置"><a href="#浏览器获得前所在位置" class="headerlink" title="浏览器获得前所在位置"></a>浏览器获得前所在位置</h3><ul>
-<li>我们还可以通过浏览器navigator获得我们当前所在的位置geolocation。</li>
-<li>位置的信息包括经度longitude和纬度latitude。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (navigator.geolocation) &#123;</span><br><span class="line">  navigator.geolocation.getCurrentPosition(<span class="keyword">function</span>(position) &#123;</span><br><span class="line">    $(<span class="string">"#data"</span>).html(<span class="string">"latitude: "</span> + position.coords.latitude + <span class="string">"&lt;br&gt;longitude: "</span> + position.coords.longitude);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h3 id="编译器：codepen"><a href="#编译器：codepen" class="headerlink" title="编译器：codepen"></a>编译器：codepen</h3><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li><p>调用openweathermap API</p>
+<p> 使用 getJSON 方法得到 API 数据，在控制台打印查看得到的数据（这一步非必选，不过是我习惯每做完一步，都打印确认一下结果。）。</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  $(document).ready(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  var api=<span class="string">'http://api.openweathermap.org/data/2.5/weather?id=2172797&amp;appid=da52b81bb3f7db80c6b8b5d9575a8471'</span>;</span><br><span class="line">  $.getJSON(api,<span class="keyword">function</span>(data)&#123;</span><br><span class="line">    alert(data.coord.lat);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -256,7 +241,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/02/16/JSON-APIs-and-Ajax/" data-id="cje8a58cc0002bttqd7d6oxot" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/02/23/show-the-local-weather/" data-id="cjfig124s000bo8tqodzllyj3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -333,7 +318,7 @@
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+        <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
 </section>
             

@@ -141,7 +141,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                12
+                13
                 <span>posts</span>
             </div>
             <div class="article-info-block">
@@ -188,7 +188,7 @@
 
             
             <section id="main">
-    <article id="post-jQuery" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Basic-JavaScript" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -196,7 +196,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/03/jQuery/">jQuery</a>
+            <a class="article-title" href="/2018/02/04/Basic-JavaScript/">Basic JavaScript</a>
         </h1>
     
 
@@ -205,8 +205,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/02/03/jQuery/">
-            <time datetime="2018-02-03T01:37:52.000Z" itemprop="datePublished">2018-02-03</time>
+        <a href="/2018/02/04/Basic-JavaScript/">
+            <time datetime="2018-02-04T01:49:55.000Z" itemprop="datePublished">2018-02-04</time>
         </a>
     </div>
 
@@ -221,22 +221,67 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="给元素加css"><a href="#给元素加css" class="headerlink" title="给元素加css"></a>给元素加css</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  $(<span class="string">"document"</span>).ready(<span class="keyword">function</span>()</span><br><span class="line">  &#123;</span><br><span class="line">  	$(<span class="string">"button"</span>).addClass(<span class="string">"animated bounce"</span>); 给按钮做回弹动作</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="给class加css"><a href="#给class加css" class="headerlink" title="给class加css"></a>给class加css</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".well"</span>).addClass(<span class="string">"animated shake"</span>); 给所有class为well的div元素shake效果</span><br></pre></td></tr></table></figure>
-<h3 id="给id加css"><a href="#给id加css" class="headerlink" title="给id加css"></a>给id加css</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#target6"</span>).addClass(<span class="string">"animated fadeOut"</span>) 给id为target6的button元素添加fade out效果</span><br></pre></td></tr></table></figure>
-<h3 id="删除jQuery的css功能"><a href="#删除jQuery的css功能" class="headerlink" title="删除jQuery的css功能"></a>删除jQuery的css功能</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"button"</span>).removeClass(<span class="string">"btn-default"</span>); 把所有button元素上的btn-default class移除掉。</span><br></pre></td></tr></table></figure>
-<h3 id="更改jQuery"><a href="#更改jQuery" class="headerlink" title="更改jQuery"></a>更改jQuery</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#target1"</span>).css(<span class="string">"color"</span>, <span class="string">"blue"</span>); 把颜色改变成蓝色</span><br></pre></td></tr></table></figure>
-<h3 id="设置按钮成不可选"><a href="#设置按钮成不可选" class="headerlink" title="设置按钮成不可选"></a>设置按钮成不可选</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"button"</span>).prop(<span class="string">"disabled"</span>, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="改变元素标记本身"><a href="#改变元素标记本身" class="headerlink" title="改变元素标记本身"></a>改变元素标记本身</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"h3"</span>).html(<span class="string">"&lt;em&gt;jQuery Playground&lt;/em&gt;"</span>); 通过em[emphasize]标签来重写和强调标题文本</span><br></pre></td></tr></table></figure>
-<h3 id="删除HTML元素"><a href="#删除HTML元素" class="headerlink" title="删除HTML元素"></a>删除HTML元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#target4"</span>).remove(<span class="string">"#target4"</span>); 移除页面中的target4元素</span><br></pre></td></tr></table></figure>
-<h3 id="移动HTML元素到另一个元素里"><a href="#移动HTML元素到另一个元素里" class="headerlink" title="移动HTML元素到另一个元素里"></a>移动HTML元素到另一个元素里</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#target4"</span>).appendTo(<span class="string">"#left-well"</span>); 让target4从我们的从right-well移到left-well</span><br></pre></td></tr></table></figure>
-<h3 id="拷贝元素"><a href="#拷贝元素" class="headerlink" title="拷贝元素"></a>拷贝元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#target2"</span>).<span class="built_in">clone</span>().appendTo(<span class="string">"#right-well"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="改变父元素的颜色"><a href="#改变父元素的颜色" class="headerlink" title="改变父元素的颜色"></a>改变父元素的颜色</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#left-well"</span>).parent().css(<span class="string">"background-color"</span>, <span class="string">"blue"</span>); 让left-well 元素的父元素parent()的背景色变成蓝色</span><br></pre></td></tr></table></figure>
-<h3 id="改变子元素的颜色"><a href="#改变子元素的颜色" class="headerlink" title="改变子元素的颜色"></a>改变子元素的颜色</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#left-well"</span>).children().css(<span class="string">"color"</span>, <span class="string">"blue"</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="jQuery选择目标元素的子元素"><a href="#jQuery选择目标元素的子元素" class="headerlink" title="jQuery选择目标元素的子元素"></a>jQuery选择目标元素的子元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".target:nth-child(3)"</span>).addClass(<span class="string">"animated bounce"</span>); 通过target class来选获得目标元素，给id为target的第三个元素加animated和bounce的css</span><br></pre></td></tr></table></figure>
-<h3 id="jQuery选择目标元素的奇数数元素"><a href="#jQuery选择目标元素的奇数数元素" class="headerlink" title="jQuery选择目标元素的奇数数元素"></a>jQuery选择目标元素的奇数数元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".target:odd"</span>).addClass(<span class="string">"animated shake"</span>); odd选择奇数元素</span><br></pre></td></tr></table></figure>
-<h3 id="jQuery选择目标元素的偶数元素"><a href="#jQuery选择目标元素的偶数元素" class="headerlink" title="jQuery选择目标元素的偶数元素"></a>jQuery选择目标元素的偶数元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".target:even"</span>).addClass(<span class="string">"animated shake"</span>); even选择奇数元素</span><br></pre></td></tr></table></figure>
-<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fadeOut 淡出</span><br><span class="line">hinge 掉落</span><br></pre></td></tr></table></figure>
+            <h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourName; </span><br><span class="line">// 创建一个名为ourName的variable（变量）</span><br></pre></td></tr></table></figure>
+<h3 id="驼峰命名法"><a href="#驼峰命名法" class="headerlink" title="驼峰命名法"></a>驼峰命名法</h3><p>变量名的第一个单词的首写字母小写，后面的单词的第一个字母大写。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var someVariable;</span><br></pre></td></tr></table></figure>
+<h3 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h3><p>在 JavaScript 中，你可以通过在引号前面使用 反斜杠 () 来转义引号。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var sampleStr = <span class="string">"Alan said, \"Peter is learning JavaScript\"."</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 转义 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'This string has "double quotes" in it. And "probably" lots of them.'</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串中的转义序列"><a href="#字符串中的转义序列" class="headerlink" title="字符串中的转义序列"></a>字符串中的转义序列</h3><p><img src="/2018/02/04/Basic-JavaScript/EscapeSequences.png" alt="EscapeSequences"></p>
+<h3 id="字符串值的长度"><a href="#字符串值的长度" class="headerlink" title="字符串值的长度"></a>字符串值的长度</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Alan Peter"</span>.length; // 10</span><br></pre></td></tr></table></figure>
+<h3 id="push-函数"><a href="#push-函数" class="headerlink" title=".push() 函数"></a>.push() 函数</h3><p>插入一个数值在函数最后</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,2,3];</span><br><span class="line">arr.push(4);</span><br><span class="line">// 现在arr的值为 [1,2,3,4]</span><br></pre></td></tr></table></figure>
+<h3 id="pop-函数"><a href="#pop-函数" class="headerlink" title=".pop() 函数"></a>.pop() 函数</h3><p>.pop() 函数用来“抛出”一个数组末尾的值。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var oneDown = [1, 4, 6].pop();</span><br><span class="line">// 现在 oneDown 的值为 6 ，数组变成了 [1, 4]。</span><br></pre></td></tr></table></figure></p>
+<h3 id="shift-函数"><a href="#shift-函数" class="headerlink" title=".shift() 函数"></a>.shift() 函数</h3><p>.shift() 移出第一个元素</p>
+<h3 id="unshift-函数"><a href="#unshift-函数" class="headerlink" title=".unshift() 函数"></a>.unshift() 函数</h3><p>移入一个元素到数组的头部</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myArray.unshift([<span class="string">"Paul"</span>,35]);</span><br></pre></td></tr></table></figure>
+<h3 id="和-（-）和-（！-）和-（-）"><a href="#和-（-）和-（！-）和-（-）" class="headerlink" title="(===) 和 （==）和 （！=）和 （!==）"></a>(===) 和 （==）和 （！=）和 （!==）</h3><p>严格相等运算符（===）会同时比较元素的值和数据类型。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3 === 3   // <span class="literal">true</span></span><br><span class="line">3 === <span class="string">'3'</span> // <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>与相等运算符类似，不相等运算符（！=）在比较的时候也会转换值的数据类型。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1 != 2      // <span class="literal">true</span></span><br><span class="line">1 != <span class="string">"1"</span>    // <span class="literal">false</span></span><br><span class="line">1 != <span class="string">'1'</span>    // <span class="literal">false</span></span><br><span class="line">1 != <span class="literal">true</span>   // <span class="literal">false</span></span><br><span class="line">0 != <span class="literal">false</span>  // <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h3 id="访问对象属性的方法"><a href="#访问对象属性的方法" class="headerlink" title="访问对象属性的方法"></a>访问对象属性的方法</h3><ul>
+<li>点操作符(.)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myObj = &#123;</span><br><span class="line">  prop1: <span class="string">"val1"</span>,</span><br><span class="line">  prop2: <span class="string">"val2"</span></span><br><span class="line">&#125;;</span><br><span class="line">var prop1val = myObj.prop1; // val1</span><br><span class="line">var prop2val = myObj.prop2; // val2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>中括号操作符([])</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myObj = &#123;</span><br><span class="line">  <span class="string">"Space Name"</span>: <span class="string">"Kirk"</span>,</span><br><span class="line">  <span class="string">"More Space"</span>: <span class="string">"Spock"</span></span><br><span class="line">&#125;;</span><br><span class="line">myObj[<span class="string">"Space Name"</span>]; // Kirk</span><br><span class="line">myObj[<span class="string">'More Space'</span>]; // Spock 需要加上引号</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用变量来访问属性的例子：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var someProp = <span class="string">"propName"</span>;</span><br><span class="line">var myObj = &#123;</span><br><span class="line">  propName: <span class="string">"Some Value"</span></span><br><span class="line">&#125;</span><br><span class="line">myObj[someProp]; // <span class="string">"Some Value"</span>,不需要加双引号</span><br></pre></td></tr></table></figure>
+<h3 id="hasOwnProperty-propname"><a href="#hasOwnProperty-propname" class="headerlink" title=".hasOwnProperty(propname)"></a>.hasOwnProperty(propname)</h3><p>检查对象是否有该属性</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var myObj = &#123;</span><br><span class="line">  top: <span class="string">"hat"</span>,</span><br><span class="line">  bottom: <span class="string">"pants"</span></span><br><span class="line">&#125;;</span><br><span class="line">myObj.hasOwnProperty(<span class="string">"top"</span>);    // <span class="literal">true</span></span><br><span class="line">myObj.hasOwnProperty(<span class="string">"middle"</span>); // <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h3 id="在JSON中访问对象的嵌套属性"><a href="#在JSON中访问对象的嵌套属性" class="headerlink" title="在JSON中访问对象的嵌套属性"></a>在JSON中访问对象的嵌套属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var ourStorage = &#123;</span><br><span class="line">  <span class="string">"desk"</span>: &#123;</span><br><span class="line">    <span class="string">"drawer"</span>: <span class="string">"stapler"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"cabinet"</span>: &#123;</span><br><span class="line">    <span class="string">"top drawer"</span>: &#123; </span><br><span class="line">      <span class="string">"folder1"</span>: <span class="string">"a file"</span>,</span><br><span class="line">      <span class="string">"folder2"</span>: <span class="string">"secrets"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"bottom drawer"</span>: <span class="string">"soda"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">ourStorage.cabinet[<span class="string">"top drawer"</span>].folder2;  // <span class="string">"secrets"</span></span><br><span class="line">ourStorage.desk.drawer; // <span class="string">"stapler"</span></span><br></pre></td></tr></table></figure>
+<h3 id="Math-random-函数"><a href="#Math-random-函数" class="headerlink" title="Math.random()函数"></a>Math.random()函数</h3><p>用来生成一个在0(包括0)到1(不包括1)之间的随机小数，因此Math.random()可能返回0但绝不会返回1。</p>
+<h3 id="Math-floor-函数"><a href="#Math-floor-函数" class="headerlink" title="Math.floor()函数"></a>Math.floor()函数</h3><p>向下取整 获得它最近的整数。</p>
+<ul>
+<li>生成0-19之间的随机数</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(Math.random() * 20);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成一个在min和max之间的随机数</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(Math.random() * (max - min + 1)) + min</span><br></pre></td></tr></table></figure>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p>Regular expressions 正则表达式被用来根据某种匹配模式来寻找strings中的某些单词。</p>
+<ul>
+<li>找到字符串The dog chased the cat中单词 the</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> /the/gi </span><br><span class="line"> </span><br><span class="line">/ 是这个正则表达式的头部</span><br><span class="line"></span><br><span class="line">the 是我们想要匹配的模式</span><br><span class="line"></span><br><span class="line">/ 是这个正则表达式的尾部</span><br><span class="line"></span><br><span class="line">g 代表着 global(全局)，意味着返回所有的匹配而不仅仅是第一个。</span><br><span class="line"></span><br><span class="line">i 代表着忽略大小写，意思是当我们寻找匹配的字符串的时候忽略掉字母的大小写。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>数字选择器\d</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/\d/g</span><br><span class="line">/\d+/g		它允许这个正则表达式匹配一个或更多数字,尾部的g是<span class="string">'global'</span>的简写，意思是允许这个正则表达式找到所有的匹配而不是仅仅找到第一个匹配</span><br></pre></td></tr></table></figure>
+<ul>
+<li>空白字符\s</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\s+/g		选取句子中的所有空白字符。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>非空白字符\S</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\S/g     匹配所有非空白字符</span><br></pre></td></tr></table></figure>
         
         </div>
         <footer class="article-footer">
@@ -246,7 +291,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/02/03/jQuery/" data-id="cjfig124r000ao8tq318vpn1u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/02/04/Basic-JavaScript/" data-id="cjfjmzgky0000b3tqgih5lxso" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -323,7 +368,7 @@
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
     </nav>
 </section>
             

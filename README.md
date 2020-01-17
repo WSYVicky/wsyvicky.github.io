@@ -1,2 +1,0 @@
-# wsyvicky.github.io
-myblog

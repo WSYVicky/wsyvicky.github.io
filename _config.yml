@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: 王诗瑜个人网页
+subtitle: blog
+description: 前端、个人简历、Blog分享、社交链接、作品展示
+keywords: 个人Profile
+author: 王诗瑜（Vicky）
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://wsyvicky.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

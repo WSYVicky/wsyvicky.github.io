@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 王诗瑜个人网页
+title: 鱼同学的个人网页
 subtitle: blog
 description: 前端、个人简历、Blog分享、社交链接、作品展示
 keywords: 个人Profile
-author: 王诗瑜（Vicky）
+author: 鱼同学
 language: en
 timezone: ''
 
@@ -101,4 +101,10 @@ deploy:
   type: git
   repository: git@github.com:WSYVicky/wsyvicky.github.io.git
   branch: master
+
+# true 启用全文搜索
+# 开启此功能需要下面操作：
+search:
+  path: search.xml
+  field: post
 

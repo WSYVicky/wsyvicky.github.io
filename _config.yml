@@ -98,7 +98,7 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+  type: github
   repository: https://github.com/WSYVicky/wsyvicky.github.io.git
   branch: master
 
